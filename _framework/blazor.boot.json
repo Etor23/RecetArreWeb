@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "RecetArreWeb",
   "resources": {
-    "hash": "sha256-aHb7zFnLu3dnxvh6mG8LAxHBRb+tkdJ1yzCUjfCLTaY=",
+    "hash": "sha256-nn9wBP5YjMou0w6qw7NmRnB201maZLqiePuhs1AgsIs=",
     "jsModuleNative": {
       "dotnet.native.js": "sha256-sn/g61GjVPhViOYQDkq1OMlk0eyS9r2Hi0qgU2o0HIU="
     },
@@ -69,7 +69,7 @@
       "System.Text.RegularExpressions.wasm": "sha256-VKL9Y6lQeg23eExgGxJAoR8gP9DXxnp8+/Mfiki+8Io=",
       "System.wasm": "sha256-T4iprIGorUAo1X44AS78i81rjTVY995cbd5O+yc1VDY=",
       "System.Private.CoreLib.wasm": "sha256-cbBYsqhSRBqBZ2GBSYXAJ1gL/wMFhY6WRNEO8UGa0+c=",
-      "RecetArreWeb.wasm": "sha256-qNKdyj4Oqf+ewbNiCTdELxvFdT21H7cI6ELqg/2NHeM="
+      "RecetArreWeb.wasm": "sha256-GpXgcGwjll0YsL/h+fydn110JAqmex+O0JsydzBBE3w="
     }
   },
   "cacheBootResources": true,
