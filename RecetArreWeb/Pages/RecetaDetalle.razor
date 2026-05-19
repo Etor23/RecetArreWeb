@@ -332,8 +332,8 @@
     private double promedioRating = 0;
     private string? usuarioId;
 
-    private void VolverARecetas() => navigation.NavigateTo("/recetas");
-    private void IrAEditar() => navigation.NavigateTo($"/recetas/editar/{Id}");
+    private void VolverARecetas() => navigation.NavigateTo("recetas");
+    private void IrAEditar() => navigation.NavigateTo($"recetas/editar/{Id}");
 
     protected override async Task OnInitializedAsync()
     {
@@ -363,7 +363,7 @@
 
         if (receta == null)
         {
-            navigation.NavigateTo("/recetas");
+            navigation.NavigateTo("recetas");
         }
     }
 
@@ -428,7 +428,7 @@
 
         if (resultado)
         {
-            navigation.NavigateTo("/recetas");
+            navigation.NavigateTo("recetas");
         }
         else
         {

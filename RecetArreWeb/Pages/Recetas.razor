@@ -239,9 +239,9 @@
         }
     }
 
-    private void IrACrear() => navigation.NavigateTo("/recetas/crear");
-    private void IrADetalle(int id) => navigation.NavigateTo($"/recetas/{id}");
-    private void IrAEditar(int id) => navigation.NavigateTo($"/recetas/editar/{id}");
+    private void IrACrear() => navigation.NavigateTo("recetas/crear");
+    private void IrADetalle(int id) => navigation.NavigateTo($"recetas/{id}");
+    private void IrAEditar(int id) => navigation.NavigateTo($"recetas/editar/{id}");
 
     private void LimpiarFiltros()
     {

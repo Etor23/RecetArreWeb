@@ -181,7 +181,7 @@
     private bool guardando = false;
     private string mensajeError = string.Empty;
 
-    private void VolverARecetas() => navigation.NavigateTo("/recetas");
+    private void VolverARecetas() => navigation.NavigateTo("recetas");
 
     protected override async Task OnInitializedAsync()
     {
@@ -196,7 +196,7 @@
             var receta = await recetaService.ObtenerPorId(Id.Value);
             if (receta == null)
             {
-                navigation.NavigateTo("/recetas");
+                navigation.NavigateTo("recetas");
                 return;
             }
 
@@ -258,7 +258,7 @@
                 var resultado = await recetaService.Actualizar(Id.Value, modificacion);
 
                 if (resultado)
-                    navigation.NavigateTo($"/recetas/{Id.Value}");
+                    navigation.NavigateTo($"recetas/{Id.Value}");
                 else
                     mensajeError = "No se pudo actualizar la receta";
             }
@@ -267,7 +267,7 @@
                 var resultado = await recetaService.Crear(modelo);
 
                 if (resultado != null)
-                    navigation.NavigateTo($"/recetas/{resultado.Id}");
+                    navigation.NavigateTo($"recetas/{resultado.Id}");
                 else
                     mensajeError = "No se pudo crear la receta. Verifica los datos.";
             }
